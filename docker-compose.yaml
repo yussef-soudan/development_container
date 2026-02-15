@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  dev: 
+    image: dev:latest
+    container_name: dev_container 
+    stdin_open: true 
+    tty: true 
+    volumes: 
+      - ./workspace:/root/workspace 
+      - ./homefiles/.config/:/root/.config/
+      - ./homefiles/.zshrc:/root/.zshrc  
+      - ./homefiles/.tmux.conf:/root/.tmux.conf  
+      - ./homefiles/.gitconfig:/root/.gitconfig
