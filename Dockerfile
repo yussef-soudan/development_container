@@ -25,7 +25,7 @@ RUN apt-get update && \
         tree \
         sed \
         screen \
-        ripgrep \
+        ripgrep && \
     rm -rf /var/lib/apt/lists/*
 
 # Nodejs
